@@ -1,0 +1,49 @@
+1.Given an array of integers and a target sum, return indices of the two numbers that add up to the target.
+
+   1.   Input the array size and elements.
+   2.  Input the target sum.
+   3.   Loop through the array with index i from 0 to n-1.
+   4.   For each i, loop j from i+1 to n-1:
+   5.   Check if arr[i] + arr[j] == target.
+   6.  If true, print the indices i and j.
+   7.   End.
+
+2.Implement binary search to find the index of a target element in a sorted array.
+
+Input the array size and sorted array elements.
+   1.   Input the target value.
+   2.   Set low = 0, high = size - 1.
+   3.   Repeat while low <= high:
+   4.   Calculate mid = (low + high) / 2.
+   5.   If arr[mid] == target, print index and exit.
+   6.   If arr[mid] < target, set low = mid + 1.
+   7.   Else, set high = mid - 1.
+   8.   If loop ends without finding target, print "Not found"
+
+3.Write a function to check if two strings are anagrams of each other.
+
+  1.    Read two input strings.
+  2.    If their lengths are different, print "Not anagram".
+  3.    Else, sort both strings in alphabetical order.
+  4.   Compare the sorted strings:
+  5.   If equal, print "Anagram".
+  6.   Else, print "Not anagram".
+
+4.Given a string, find the length of the longest substring without repeating characters.
+
+    1. Read the input string.
+    2. Initialize maxLen = 0.
+    3. For each i from 0 to length-1:
+    4. For each j from i to length-1:
+    5. Check if the substring str[i..j] has all unique characters using a helper function.
+    6. If yes, update maxLen with maximum of current length and maxLen.
+    7. Print maxLen.
+
+5.Write a code that counts how many palindromic substrings are present in a given string.
+
+    1.  Read the input string.
+    2.  Initialize count = 0.
+    3.  For every possible substring str[i..j] where i <= j:
+    4.  Check if substring is a palindrome using a helper function.
+    5.  If yes, increment count.
+    6.  Print count.
